@@ -1,6 +1,6 @@
 # Mini To-Do App
 
-A simple and interactive To-Do List application built using HTML, CSS and vanilla JavaScript. 
+A simple and interactive To-Do List application built using HTML, CSS and JavaScript. 
 This project was created to practise JavaScript fundamentals and DOM manipulation by building a functional application from scratch.
 
 ## Features
