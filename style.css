@@ -4,74 +4,61 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 html,
 body {
-    margin: 0;
-    min-height: 100%;
-    box-sizing: border-box;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
-    min-height: 100vh;
-    padding: 40px 20px;
+  min-height: 100vh;
+  padding: 40px 20px;
 
-    background-color: #eeecec;
-    font-size: 14px;
+  background-color: #eeecec;
+  font-size: 14px;
 }
 
 .card {
   width: 50vw;
-  /* min-height: 80vh; */
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 2px 2px rgb(221, 220, 220);
   padding: 30px 20px;
   text-align: center;
-  /* margin: 15px; */
-  /* overflow-y: auto; */
-
-  /* margin: 40px 0px; */
 }
-
 
 
 /* HEADER  */
 
-/* .header {
-    font-size: 2rem;
-} */
-
 .header h1 {
-    padding: 0px 4px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.5rem;
+  padding: 0px 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
 }
 
 .tick-img {
-    color: blue;
-    /* display: inline-block; */
+  color: blue;
 }
-
 
 
 /* FORM */
 
 .form {
   display: flex;
-    justify-content: center;
-    margin: 20px 0px;
+  justify-content: center;
+  margin: 20px 0px;
 }
-
 
 #task-input {
   padding: 12px 0px 12px 15px;
@@ -98,44 +85,45 @@ body {
 /* FILTERS */
 
 .filters {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
+
 .filter-btn {
-    border: 1px solid #b4b2b2;
-    background: #cac9c924;
-    border-radius: 17px;
-    padding: 8px 20px;
-    font-size: 1.04rem;
-    font-weight: 500;
-    cursor: pointer;
+  border: 1px solid #b4b2b2;
+  background: #cac9c924;
+  border-radius: 17px;
+  padding: 8px 20px;
+  font-size: 1.04rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .selected {
-  /* border: 1px solid #b4b2b2; */
-    background: blue;
-    border: none;
-    color: white;
+  background: blue;
+  border: none;
+  color: white;
 }
+
 
 /* TASK LISTS */
 
 .task-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .task-items {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid rgb(211, 210, 210);
-    border-radius: 5px;
-    width: 40vw;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(211, 210, 210);
+  border-radius: 5px;
+  width: 40vw;
 }
 
 .left {
@@ -147,8 +135,6 @@ body {
 input[type="checkbox"]{
   height: 30px;
   width: 30px;
-  /* appearance: none;
-  -webkit-appearance: none; */
   border: 2px solid rgb(192, 190, 190);
   margin: 8px;
   cursor: pointer;
@@ -160,7 +146,6 @@ input[type="checkbox"]{
 }
 
 .del-icon {
-  /* height: 30px; */
    width: 30px;
   display: inline-flex;
   align-items: center;
@@ -181,8 +166,8 @@ input[type="checkbox"]{
   font-size: 1.2em;
 
   font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer span {
@@ -197,19 +182,6 @@ input[type="checkbox"]{
 
   font: inherit;
 }
-
-/* 
-.clear-btn {
-  color: blue;
-  border: none;
-  background: transparent;
-
-  font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-} */
-
-
 
 
 .display-none {

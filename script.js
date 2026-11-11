@@ -43,9 +43,9 @@ function check_task(task){
             task_array.push(new_object);
 
             remaining ++;
-            task_remaining.textContent = `${remaining} tasks remaining`
+            task_remaining.textContent = `${remaining} tasks remaining`;
 
-            add_items()
+            add_items();
         }
     }
 }
@@ -54,45 +54,45 @@ function check_task(task){
 
 filters.firstElementChild.addEventListener("click", ()=>{
         current_filter = "all";
-        add_items()
+        add_items();
 })
 
 active.addEventListener("click", ()=>{
         current_filter = "active";
-        add_items()
+        add_items();
 })
 
 completed.addEventListener("click", ()=>{
         current_filter = "completed";
-        add_items()
+        add_items();
 })
 
 
 function add_items(){
     switch (current_filter) {
         case "all":
-            active.classList.remove("selected")
-            completed.classList.remove("selected")
+            active.classList.remove("selected");
+            completed.classList.remove("selected");
             filters.firstElementChild.classList.add("selected");
-            rendertasks(task_array)
+            rendertasks(task_array);
             break;
 
         case "active":
-            filters.firstElementChild.classList.remove("selected")
-            filters.lastElementChild.classList.remove("selected")
+            filters.firstElementChild.classList.remove("selected");
+            filters.lastElementChild.classList.remove("selected");
             active.classList.add("selected");
 
             active_list = task_array.filter(item=>item.completed === false);
-            rendertasks(active_list)
+            rendertasks(active_list);
             break;
 
         case "completed":
-            filters.firstElementChild.classList.remove("selected")
+            filters.firstElementChild.classList.remove("selected");
             active.classList.remove("selected");
             completed.classList.add("selected");
 
-            active_list = task_array.filter(item=>item.completed === true)
-            rendertasks(active_list)
+            active_list = task_array.filter(item=>item.completed === true);
+            rendertasks(active_list);
             break;
     }
 }
@@ -108,16 +108,16 @@ function rendertasks(array){
         new_item = task_item.cloneNode(true);
         new_item.querySelector("p").textContent = element.task;
 
-        let checkbox = new_item.querySelector("input")
+        let checkbox = new_item.querySelector("input");
         checkbox.checked = element.completed;
     
         checkbox.addEventListener("change", (e)=>{
             element.completed = e.target.checked;
 
-            remaining = task_array.filter(item=>item.completed === false).length
-            task_remaining.textContent = `${remaining} tasks remaining`
+            remaining = task_array.filter(item=>item.completed === false).length;
+            task_remaining.textContent = `${remaining} tasks remaining`;
 
-            add_items()
+            add_items();
         })
 
 
@@ -127,10 +127,10 @@ function rendertasks(array){
             if(index !== -1){
                 task_array.splice(index, 1);
             }
-            remaining = task_array.filter(item=>item.completed === false).length
-            task_remaining.textContent = `${remaining} tasks remaining`
+            remaining = task_array.filter(item=>item.completed === false).length;
+            task_remaining.textContent = `${remaining} tasks remaining`;
             
-            add_items()
+            add_items();
         })
 
 
@@ -142,6 +142,6 @@ function rendertasks(array){
 clear_all_btn.addEventListener("click", ()=>{
         task_array = task_array.filter(item=>item.completed === false);
         console.log(task_array);
-        add_items()
+        add_items();
 })
 
