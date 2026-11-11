@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <title>P1 - Mini Todo App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="header"><h1>
+                <i class="fa-solid fa-square-check tick-img"></i>
+                My To-Do List</h1>
+            </div>
+            
+
+            <form class="form">
+                <input type="text" name="task" id="task-input" placeholder="Enter a new task..">
+                <button class="task-submit-btn" id="task-btn" type="submit">
+                    Add Task
+                </button>
+            </form>
+
+            <div class="filters">
+                <button type="button" class="filter-btn selected">All</button>
+                <button type="button" class="filter-btn active">Active</button>
+                <button type="button" class="filter-btn completed">Completed</button>
+            </div>
+
+            <ul class="task-list">
+                <li class="task-items display-none">
+                    <div class="left">
+                        <input type="checkbox">
+                        <p>Learn React</p>
+                    </div>
+                    <i class="fa-regular fa-trash-can del-icon"></i>
+                </li>
+                <!-- <li class="task-items">
+                    <div class="left">
+                        <input type="checkbox">
+                        <p>TEXT</p>
+                    </div>
+                    <i class="fa-regular fa-trash-can del-icon"></i>
+                </li> -->
+            </ul>
+
+            <div class="footer">
+                <span class="task-no">No tasks remaining</span>
+                <button class="clear-all-btn" type="button">Clear completed</button>
+                <!-- <input type="button" value="Clear Completed" class="clear-btn"> -->
+            </div>
+        </div>
+
+    </body>
+</html>
+
